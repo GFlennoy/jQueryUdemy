@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circles</title>
+    <script src="paper-full.js"></script>
+    <link rel="stylesheet" href="circles.css" />
+
+    <script type="text/paperscript" canvas="myCanvas">
+      // Make 100 copies of the circle:
+                for (var x = 0; x < 1000; x+= 100) {
+                  // nest for loop for y axis
+                  for (var y = 0; y < 1000; y+= 100) {
+                    // set new path for circles
+                  new Path.Circle(new Point(x, y), 10).fillColor = "red";
+
+                  }
+                }
+    </script>
+  </head>
+  <body>
+    <canvas id="myCanvas" resize></canvas>
+  </body>
+</html>
